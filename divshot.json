@@ -2,5 +2,17 @@
   "name": "mecanicamatias",
   "root": "./",
   "clean_urls": true,
-  "error_page": "error.html"
+  "error_page": "error.html",
+  "forms": {
+    "contact": {
+      "to": "mecanicamatias@gmail.com",
+      "from": "mecanicamatias+web@gmail.com",
+      "replyTo": "{{nombre}} <{{email}}>",
+      "subject": "Contacto sitio: {{nombre}}",
+      "html": "<b>Nombre</b> {{nombre}}<br \> <b>Asunto</b> {{asunto}}",
+      "text": "Nombre: {{nombre}}\nAsunto: {{asunto}}",
+      "success": "/contact-received",
+      "failure": "/contact-failure"
+    }
+  }
 }
